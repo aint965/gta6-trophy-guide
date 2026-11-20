@@ -1,0 +1,6 @@
+[
+  { "name": "1-cover.png", "query": "?kind=Collectibles&trophy=28", "w": 1120, "h": 865 },
+  { "name": "2-guide.png", "query": "?kind=Activities&trophy=17", "w": 1120, "h": 770 },
+  { "name": "3-roadmap.png", "query": "?view=roadmap", "w": 1120, "h": 930 },
+  { "name": "4-spoilers.png", "query": "?kind=Story&spoilers=1&trophy=4", "w": 1120, "h": 720 }
+]

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Leonida Ledger | GTA VI Trophy Guide</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mast">
+    <div class="frame mast-inner">
+      <div class="brand"><img src="mark.svg" width="40" height="40" alt=""><span>LEONIDA LEDGER</span></div>
+      <div class="platform">PS5 <span> / </span> STORY MODE</div>
+      <div class="file-actions">
+        <button id="export" type="button"><span aria-hidden="true">↓</span> Export</button>
+        <button id="import-button" type="button"><span aria-hidden="true">↑</span> Import</button>
+        <input id="import" type="file" accept=".json,application/json" hidden>
+      </div>
+    </div>
+  </header>
+  <main class="frame">
+    <section class="overview" aria-labelledby="title">
+      <div>
+        <p class="eyebrow">GRAND THEFT AUTO VI / TROPHY GUIDE</p>
+        <h1>Road to Platinum</h1>
+        <div id="grade-totals" class="grade-totals" aria-label="Trophies by grade"></div>
+      </div>
+      <div class="progress-panel">
+        <div class="progress-top"><span class="eyebrow">PLATINUM PROGRESS</span><span id="save-status">Saved on this device</span></div>
+        <div class="progress-value"><span id="progress-count"></span><strong id="percent"></strong></div>
+        <progress id="progress" max="55" value="0" aria-label="Overall trophy progress"></progress>
+      </div>
+    </section>
+    <div class="view-bar">
+      <nav aria-label="Guide views"><button id="tracker-view" aria-pressed="true">Checklist</button><button id="roadmap-view" aria-pressed="false">Roadmap</button></nav>
+      <label class="spoilers"><input id="spoilers" type="checkbox" role="switch"><span>Hide story spoilers</span></label>
+    </div>
+    <p id="notice" role="status" hidden></p>
+    <section id="tracker" aria-label="Trophy checklist">
+      <div class="filters">
+        <div id="kinds" class="kinds" role="group" aria-label="Filter by kind"></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Find a trophy…" aria-label="Find a trophy"></label>
+        <select id="grade" aria-label="Filter by grade"><option value="all">Any grade</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select>
+        <select id="status" aria-label="Filter by earned status"><option value="all">Any status</option><option value="unearned">Unearned</option><option value="earned">Earned</option></select>
+      </div>
+      <div class="workspace">
+        <section class="checklist" aria-label="Matching trophies">
+          <div class="list-head"><span>PS5 CHECKLIST</span><span id="match-count" aria-live="polite"></span></div>
+          <ul id="rows" aria-label="Matching trophies"></ul>
+        </section>
+        <section id="guide" class="guide" aria-label="Selected trophy guide"></section>
+      </div>
+    </section>
+    <section id="roadmap" aria-label="Platinum roadmap" hidden></section>
+    <footer><span>LEONIDA LEDGER / PS5 FIELD GUIDE</span><span>Unofficial · 55 trophies · 28 hidden on PS5</span></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
